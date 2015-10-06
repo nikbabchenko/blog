@@ -1,0 +1,341 @@
+doctype html
+html lang="en"
+  head
+    meta charset="utf-8" /
+    meta content="IE=edge" http-equiv="X-UA-Compatible" /
+    meta content="width=device-width, initial-scale=1" name="viewport" /
+    meta content="" name="description" /
+    meta content="" name="author" /
+    title Blog
+    link href="css/normalize.css" rel="stylesheet" /
+    link href="css/font-awesome.min.css" rel="stylesheet" /
+    link href="css/flaticon.css" rel="stylesheet" /
+    link href="css/jssocials.css" rel="stylesheet" /
+    link href="css/jssocials-theme-flat.css" rel="stylesheet" /
+    link href="css/styles.css" rel="stylesheet" /
+  body
+    header.header.container-fluid
+     .container
+        .header__logo
+          a.logo href="/" Лого
+        ul.menu
+          li.menu__item
+            a href="#" Меню
+          li.menu__item
+            a href="#" Меню
+          li.menu__item.menu__item--withsub
+            a href="#" Меню
+            ul.sub-menu
+              li.sub-menu__item
+                a href="#" Меню
+              li.sub-menu__item
+                a href="#" Меню
+              li.sub-menu__item
+                a href="#" Меню
+              li.sub-menu__item.menu__item--withsub
+                a href="#" Меню
+                ul.sub-menu2
+                  li.sub-menu__item
+                    a href="#" Меню
+                  li.sub-menu__item
+                    a href="#" Меню
+                  li.sub-menu__item
+                    a href="#" Меню
+        .mobile-menu-wrapper
+          #menu-toggle Меню
+          ul#menu
+            li
+              a href="#"  Меню
+            li
+              a href="#"  Меню
+            li
+              a href="#"  Меню
+              ul.sub-menu
+                li
+                  a href="#"  Меню
+                li
+                  a href="#"  Меню
+                li
+                  a href="#"  Меню
+                li
+                  a href="#"  Меню
+                  ul.sub-menu
+                    li
+                      a href="#"  Меню
+                    li
+                      a href="#"  Меню
+                    li
+                      a href="#"  Меню
+
+        .header__icons.social
+          a.social__item.social__item--search href="#"
+            img src="images/search.png"
+          a.social__item.social__item--twitter href="#"
+            img src="images/icon-twit.png"
+          a.social__item.social__item--google href="#"
+            img src="images/icon-google.png"
+          a.social__item.social__item--warning href="#"
+            img src="images/icon-warning.png"
+
+    .searchform
+      form#searchform[action=("/") method="get" name="search"]
+        input#s name="s" placeholder="Поиск..." type="text" /
+        .close-btn.i.fa.fa-times
+
+    .content.container
+      .content__main
+        .content__nav
+          .content-nav__type-of-content
+            ul.breadcrumbs
+              li.breadcrumbs__item.breadcrumbs__item--home
+                a href="#"
+                  i.fa.fa-home
+              li.breadcrumbs__item.breadcrumbs__item--rubrics
+                a href="#" Рубрика
+              li.breadcrumbs__item.breadcrumbs__item--note
+                a href="#" Запись
+          .content-nav__popular-content
+            ul.nav-popular
+              li.nav-popular__item.active
+                a href="#" Новые
+              li.nav-popular__item
+                a href="#" Популярные
+        .content-wrapper.post
+          h1.post-heading Заголовок страницы со спойлерами
+          .spoiler
+            .spoiler__item.spoiler__item--vip
+              .spoiler__header
+                .spoiler__num vip
+                img.spoiler__logo src="images/logo-e.png"
+                .spoiler__caption Aliexpress
+                .rating.control-mode
+                  i.fa.fa-star-o
+                  i.fa.fa-star-o
+                  i.fa.fa-star-o
+                  i.fa.fa-star-o
+                  i.fa.fa-star-o
+                a.spoiler__arrow href="#"
+                  i.fa.fa-angle-down
+              .spoiler__body
+                .spoiler__title
+                  img.spoiler__image src="images/featured-image1.png"
+                  .spoiler__info
+                    .spoiler__socials
+                      .shares
+                    .spoiler__result
+                      .rating.view-mode
+                        i.fa.fa-star-o.is-active
+                        i.fa.fa-star-o.is-active
+                        i.fa.fa-star-o.is-active
+                        i.fa.fa-star-o.is-active
+                        i.fa.fa-star-o.is-active
+                      .spoiler__result-vote
+                          .spoiler__rating 4,5
+                          .spoiler__vote 193 715 голосов
+                  .spoiler__button-group
+                    a.spoiler__button.spoiler__button--pink href="#" Кнопка
+                    a.spoiler__button.spoiler__button--blue href="#" Кнпока
+                .spoiler__description
+                  | Так вот, с помощью специально предусмотренного для подобных случаев фильтра &nbsp;
+                  span.grey-bg.red-text
+                    |  post_gallery
+                  |  можно преобразовать данный шоткод в произвольный код, превратив его в слайдер. Для последнего, разумеется, потребуется подключить к сайту какой-либо jQuery-плагин.
+
+
+
+            .spoiler__item
+              .spoiler__header
+                .spoiler__num 1
+                img.spoiler__logo src="images/logo-e.png"
+                .spoiler__caption Aliexpress
+                .rating.control-mode
+                  i.fa.fa-star-o
+                  i.fa.fa-star-o
+                  i.fa.fa-star-o
+                  i.fa.fa-star-o
+                  i.fa.fa-star-o
+                a.spoiler__arrow href="#"
+                  i.fa.fa-angle-down
+              .spoiler__body
+                .spoiler__title
+                  img.spoiler__image src="images/featured-image1.png"
+                  .spoiler__info
+                    .spoiler__socials
+                      .shares
+                    .spoiler__result
+                      .rating.view-mode
+                        i.fa.fa-star-o.is-active
+                        i.fa.fa-star-o.is-active
+                        i.fa.fa-star-o.is-active
+                        i.fa.fa-star-o.is-active
+                        i.fa.fa-star-o.is-active
+                      .spoiler__result-vote
+                          .spoiler__rating 4,5
+                          .spoiler__vote 193 715 голосов
+                  .spoiler__button-group
+                    a.spoiler__button.spoiler__button--pink href="#" Кнопка
+                    a.spoiler__button.spoiler__button--blue href="#" Кнпока
+                .spoiler__description
+                  | Так вот, с помощью специально предусмотренного для подобных случаев фильтра &nbsp;
+                  span.grey-bg.red-text
+                    |  post_gallery
+                  |  можно преобразовать данный шоткод в произвольный код, превратив его в слайдер. Для последнего, разумеется, потребуется подключить к сайту какой-либо jQuery-плагин.
+
+
+
+            .spoiler__item
+              .spoiler__header
+                .spoiler__num 2
+                img.spoiler__logo src="images/logo-e.png"
+                .spoiler__caption Aliexpress
+                .rating.control-mode
+                  i.fa.fa-star-o
+                  i.fa.fa-star-o
+                  i.fa.fa-star-o
+                  i.fa.fa-star-o
+                  i.fa.fa-star-o
+                a.spoiler__arrow href="#"
+                a.spoiler__arrow href="#"
+                  i.fa.fa-angle-down
+              .spoiler__body
+                .spoiler__title
+                  img.spoiler__image src="images/featured-image1.png"
+                  .spoiler__info
+                    .spoiler__socials
+                      .shares
+                    .spoiler__result
+                      .rating.view-mode
+                        i.fa.fa-star-o.is-active
+                        i.fa.fa-star-o.is-active
+                        i.fa.fa-star-o.is-active
+                        i.fa.fa-star-o.is-active
+                        i.fa.fa-star-o.is-active
+                      .spoiler__result-vote
+                          .spoiler__rating 4,5
+                          .spoiler__vote 193 715 голосов
+                  .spoiler__button-group
+                    a.spoiler__button.spoiler__button--pink href="#" Кнопка
+                    a.spoiler__button.spoiler__button--blue href="#" Кнпока
+                .spoiler__description
+                  | Так вот, с помощью специально предусмотренного для подобных случаев фильтра &nbsp;
+                  span.grey-bg.red-text
+                    |  post_gallery
+                  |  можно преобразовать данный шоткод в произвольный код, превратив его в слайдер. Для последнего, разумеется, потребуется подключить к сайту какой-либо jQuery-плагин.
+
+            .spoiler__item
+              .spoiler__header
+                .spoiler__num 3
+                img.spoiler__logo src="images/logo-e.png"
+                .spoiler__caption Aliexpress
+                .rating.control-mode
+                  i.fa.fa-star-o
+                  i.fa.fa-star-o
+                  i.fa.fa-star-o
+                  i.fa.fa-star-o
+                  i.fa.fa-star-o
+                a.spoiler__arrow href="#"
+                  i.fa.fa-angle-down
+
+              .spoiler__body
+                .spoiler__title
+                  img.spoiler__image src="images/featured-image1.png"
+                  .spoiler__info
+                    .spoiler__socials
+                      .shares
+                    .spoiler__result
+                      .rating.view-mode
+                        i.fa.fa-star-o.is-active
+                        i.fa.fa-star-o.is-active
+                        i.fa.fa-star-o.is-active
+                        i.fa.fa-star-o.is-active
+                        i.fa.fa-star-o.is-active
+                      .spoiler__result-vote
+                          .spoiler__rating 4,5
+                          .spoiler__vote 193 715 голосов
+                  .spoiler__button-group
+                    a.spoiler__button.spoiler__button--pink href="#" Кнопка
+                    a.spoiler__button.spoiler__button--blue href="#" Кнпока
+                .spoiler__description
+                  | Так вот, с помощью специально предусмотренного для подобных случаев фильтра &nbsp;
+                  span.grey-bg.red-text
+                    |  post_gallery
+                  |  можно преобразовать данный шоткод в произвольный код, превратив его в слайдер. Для последнего, разумеется, потребуется подключить к сайту какой-либо jQuery-плагин.
+
+            .spoiler__item
+              .spoiler__header
+                .spoiler__num 4
+                img.spoiler__logo src="images/logo-e.png"
+                .spoiler__caption Aliexpress
+                .rating.control-mode
+                  i.fa.fa-star-o
+                  i.fa.fa-star-o
+                  i.fa.fa-star-o
+                  i.fa.fa-star-o
+                  i.fa.fa-star-o
+                a.spoiler__arrow href="#"
+                  i.fa.fa-angle-down
+
+              .spoiler__body
+                .spoiler__title
+                  img.spoiler__image src="images/featured-image1.png"
+                  .spoiler__info
+                    .spoiler__socials
+                      .shares
+                    .spoiler__result
+                      .rating.view-mode
+                        i.fa.fa-star-o.is-active
+                        i.fa.fa-star-o.is-active
+                        i.fa.fa-star-o.is-active
+                        i.fa.fa-star-o.is-active
+                        i.fa.fa-star-o.is-active
+                      .spoiler__result-vote
+                          .spoiler__rating 4,5
+                          .spoiler__vote 193 715 голосов
+                  .spoiler__button-group
+                    a.spoiler__button.spoiler__button--pink href="#" Кнопка
+                    a.spoiler__button.spoiler__button--blue href="#" Кнпока
+                .spoiler__description
+                  | Так вот, с помощью специально предусмотренного для подобных случаев фильтра &nbsp;
+                  span.grey-bg.red-text
+                    |  post_gallery
+                  |  можно преобразовать данный шоткод в произвольный код, превратив его в слайдер. Для последнего, разумеется, потребуется подключить к сайту какой-либо jQuery-плагин.
+
+
+      .content__sidebar
+        ul.accordeon
+          li.accordeon__item
+            h3
+              | Рубрики
+            .menu-toggle
+              i.fa.fa-bars
+          ul.sidebar-rubrics
+            li
+             a href="#" Рубрика 1
+            li
+             a href="#" Рубрика 2
+            li
+             a.current href="#" Рубрика 3
+        a.banner href="#"
+          img src="images/banner-right.jpg"
+        .best-articles
+          h4.best-articles__heading Лучшие статьи
+          .best-articles-newsletter
+            input.best-articles__input[type="email" placeholder="Email"]
+            button.best-articles__submit[type="submit"] Получить
+    footer.container-fluid
+      .container
+        .footer-copyright
+          p
+          | © 2006-2015
+          br/
+          | Name.
+          br/
+          | Все права защищены.
+          br/
+          | Перепечатка запрещена.
+script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.js" type="text/javascript"
+script src="js/jssocials-post.js"
+script src="js/main.js" type="text/javascript"
+
+
+

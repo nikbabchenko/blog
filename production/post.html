@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+    <title>Blog</title>
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/flaticon.css" rel="stylesheet" />
+    <link href="css/jssocials.css" rel="stylesheet" />
+    <link href="css/jssocials-theme-flat.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="header container-fluid">
+      <div class="container">
+        <div class="header__logo">
+          <a class="logo" href="/">Лого</a>
+        </div>
+        <ul class="menu">
+          <li class="menu__item">
+            <a href="#">Меню</a>
+          </li>
+          <li class="menu__item">
+            <a href="#">Меню</a>
+          </li>
+          <li class="menu__item menu__item--withsub">
+            <a href="#">Меню</a>
+            <ul class="sub-menu">
+              <li class="sub-menu__item">
+                <a href="#">Меню</a>
+              </li>
+              <li class="sub-menu__item">
+                <a href="#">Меню</a>
+              </li>
+              <li class="sub-menu__item">
+                <a href="#">Меню</a>
+              </li>
+              <li class="sub-menu__item menu__item--withsub">
+                <a href="#">Меню</a>
+                <ul class="sub-menu2">
+                  <li class="sub-menu__item">
+                    <a href="#">Меню</a>
+                  </li>
+                  <li class="sub-menu__item">
+                    <a href="#">Меню</a>
+                  </li>
+                  <li class="sub-menu__item">
+                    <a href="#">Меню</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <div class="mobile-menu-wrapper">
+          <div id="menu-toggle">
+            Меню
+          </div>
+          <ul id="menu">
+            <li>
+              <a href="#"> Меню</a>
+            </li>
+            <li>
+              <a href="#"> Меню</a>
+            </li>
+            <li>
+              <a href="#"> Меню</a>
+              <ul class="sub-menu">
+                <li>
+                  <a href="#"> Меню</a>
+                </li>
+                <li>
+                  <a href="#"> Меню</a>
+                </li>
+                <li>
+                  <a href="#"> Меню</a>
+                </li>
+                <li>
+                  <a href="#"> Меню</a>
+                  <ul class="sub-menu">
+                    <li>
+                      <a href="#"> Меню</a>
+                    </li>
+                    <li>
+                      <a href="#"> Меню</a>
+                    </li>
+                    <li>
+                      <a href="#"> Меню</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="header__icons social">
+          <a class="social__item social__item--search" href="#"><img src="images/search.png" /></a><a class="social__item social__item--twitter" href="#"><img src="images/icon-twit.png" /></a><a class="social__item social__item--google" href="#"><img src="images/icon-google.png" /></a><a class="social__item social__item--warning" href="#"><img src="images/icon-warning.png" /></a>
+        </div>
+      </div>
+    </header>
+    <div class="searchform">
+      <form action="/" id="searchform" method="get" name="search">
+        <input id="s" name="s" placeholder="Поиск..." type="text" />
+        <div class="close-btn i fa fa-times"></div>
+      </form>
+    </div>
+    <div class="content container">
+      <div class="content__main">
+        <div class="content__nav">
+          <div class="content-nav__type-of-content">
+            <ul class="breadcrumbs">
+              <li class="breadcrumbs__item breadcrumbs__item--home">
+                <a href="#"><i class="fa fa-home"></i></a>
+              </li>
+              <li class="breadcrumbs__item breadcrumbs__item--rubrics">
+                <a href="#">Рубрика</a>
+              </li>
+              <li class="breadcrumbs__item breadcrumbs__item--note">
+                <a href="#">Запись</a>
+              </li>
+            </ul>
+          </div>
+          <div class="content-nav__popular-content">
+            <ul class="nav-popular">
+              <li class="nav-popular__item active">
+                <a href="#">Новые</a>
+              </li>
+              <li class="nav-popular__item">
+                <a href="#">Популярные</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="content-wrapper post">
+          <h1 class="post-heading">
+            Создание слайдера из стандартной фотогалереи WordPress
+          </h1>
+          <div class="post-image">
+            <img src="images/page-image1.png" />
+          </div>
+          <div class="post__text">
+            <p>
+              Как вы наверняка знаете, WordPress имеет встроенный функционал добавления в статьи сайта простеньких фотогалерей. Когда вы добавляете в статью галерею из фотографий через кнопку «Добавить медиафайл», в текст вставляется шоткод вида &nbsp;<span class="grey-bg red-text">  [gallery ids="1284,1283,915"]</span> .
+            </p>
+            <p>
+              Так вот, с помощью специально предусмотренного для подобных случаев фильтра &nbsp;<span class="grey-bg red-text"> post_gallery</span> можно преобразовать данный шоткод в произвольный код, превратив его в слайдер. Для последнего, разумеется, потребуется подключить к сайту какой-либо jQuery-плагин.
+            </p>
+          </div>
+          <div class="content-post-info__meta--single meta">
+            <i class="fa fa-calendar meta__date">
+              <p>
+                27 апреля 2015 года.
+              </p>
+            </i><i class="fa fa-pencil-square-o meta__rubric">
+              <p>
+                рубрика
+              </p>
+            </i><i class="fa fa-comment-o meta-comments">
+              <p>
+                5 комментариев
+              </p>
+            </i><i class="fa fa-eye meta-reviews">
+              <p>
+                100 просмотров
+              </p>
+            </i>
+          </div>
+          <div class="social-wrapper">
+            <div id="share"></div>
+          </div>
+          <div class="featured-posts">
+            <div class="featured-posts__heading">
+              Похожие записи
+            </div>
+            <div class="featured-posts__wrapper">
+              <div class="featured-posts__item featured-post">
+                <a href="#"><img class="featured-post__image" src="images/featured-image1.png" /></a><a class="featured-post__heading" href="#">Название</a>
+              </div>
+              <div class="featured-posts__item featured-post">
+                <a href="#"><img class="featured-post__image" src="images/featured-image1.png" /></a><a class="featured-post__heading" href="#">Название</a>
+              </div>
+              <div class="featured-posts__item featured-post">
+                <a href="#"><img class="featured-post__image" src="images/featured-image1.png" /></a><a class="featured-post__heading" href="#">Название</a>
+              </div>
+            </div>
+          </div>
+          <div class="ajax-container">
+            <a class="ajax-more" href="#"><img src="images/refresh.png" /><span>Еще записи</span></a>
+          </div>
+          <div class="comments">
+            <div class="comments__count">
+              <i class="fa fa-comments-o"></i> Комментарии: 4
+            </div>
+            <div class="comments__open">
+              <a href="#">Добавить комментарий</a>
+            </div>
+          </div>
+          <form action="#" class="comments-form" method="post">
+            <div class="comments-form-fields">
+              <div class="comments-form__field comments-form__author">
+                <input class="comments-form__field" name="author" placeholder="Имя" type="text" value="" />
+              </div>
+              <div class="comments-form__field comments-form__email">
+                <input class="comments-form__field" name="email" placeholder="E-mail (не публикуетcя)" type="text" value="" />
+              </div>
+              <div class="comments-form__rating">
+                <select class="comments-form__select" name="vote">
+                  <option value="1">
+                    Положительный
+                  </option>
+                  <option selected="" value="2">
+                    Нейтральный
+                  </option>
+                  <option value="3">
+                    Отрицательный
+                  </option>
+                </select>
+              </div>
+            </div>
+            <textarea class="comments__textarea"></textarea>
+            <div class="add-comment-buttons">
+              <div class="add-comment-buttons">
+                <input class="add-comment-buttons__add" type="submit" value="Добавить" /><a class="add-comment-buttons__preview" href="#">Просмотр</a><input class="add-comment-buttons__reset" type="reset" value="Отмена" />
+              </div>
+            </div>
+          </form>
+          <div class="comments-wrapper">
+            <div class="comments-meta">
+              <div class="comments__tabs tabs">
+                <h4 class="tabs__title active">
+                  <a href="#">Первые</a>
+                </h4>
+                <h4 class="tabs__title">
+                  <a href="#">Последние</a>
+                </h4>
+              </div>
+              <div class="comments__complete-rating">
+                <div class="rating-text">
+                  <div class="rating-text__positive-wrapper">
+                    <i class="fa fa-thumbs-up"></i><span> 74 -</span><span class="rating-text__positive"> Положительные</span>
+                  </div>
+                  <div class="rating-text__negative-wrapper">
+                    <i class="fa fa-thumbs-down"></i><span> 43 -</span><span class="rating-text__negative"> Отрицательные</span>
+                  </div>
+                </div>
+                <div class="rating-diagram">
+                  <div class="rating-diagram__scale">
+                    <div class="rating-positive" style="width:70%;"></div>
+                    <div class="rating-negative" style="width:30%;"></div>
+                  </div>
+                  <div class="rating-diagram__percent">
+                    63,2%
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="comments-list">
+            <div class="comments-list__item comment comment-neutral">
+              <div class="comment__avatar">
+                <img src="images/author-img.png" />
+              </div>
+              <div class="comment__meta-wrapper">
+                <div class="comment__meta">
+                  <div class="comment__name">
+                    Автор
+                  </div>
+                  <i class="fa fa-calendar comment__date"><span>27 апреля 2015 г.</span></i>
+                </div>
+                <div class="comment__content">
+                  Спасибо, все работает!
+                </div>
+              </div>
+              <div class="comment__reply">
+                <a href="#">Ответить</a>
+              </div>
+            </div>
+            <div class="comments-list__item comment comment-positive">
+              <div class="comment__avatar">
+                <img src="images/author-img.png" />
+              </div>
+              <div class="comment__meta-wrapper">
+                <div class="comment__meta">
+                  <div class="comment__name">
+                    Положительный
+                  </div>
+                  <i class="fa fa-calendar comment__date"><span>27 апреля 2015 г.</span></i>
+                </div>
+                <div class="comment__content">
+                  Спасибо, все работает!
+                </div>
+              </div>
+              <div class="comment__reply">
+                <a href="#">Ответить</a>
+              </div>
+            </div>
+            <div class="comments-list__item comment comment-negative">
+              <div class="comment__avatar">
+                <img src="images/author-img.png" />
+              </div>
+              <div class="comment__meta-wrapper">
+                <div class="comment__meta">
+                  <div class="comment__name">
+                    Отрицательный
+                  </div>
+                  <i class="fa fa-calendar comment__date"><span>27 апреля 2015 г.</span></i>
+                </div>
+                <div class="comment__content">
+                  Спасибо, все работает!
+                </div>
+              </div>
+              <div class="comment__reply">
+                <a href="#">Ответить</a>
+              </div>
+            </div>
+            <div class="comments-list__item comment">
+              <div class="comment__avatar">
+                <img src="images/author-img.png" />
+              </div>
+              <div class="comment__meta-wrapper">
+                <div class="comment__meta">
+                  <div class="comment__name">
+                    Евгений
+                  </div>
+                  <i class="fa fa-calendar comment__date"><span>27 апреля 2015 г.</span></i>
+                </div>
+                <div class="comment__content">
+                  Спасибо, все работает!
+                </div>
+              </div>
+              <div class="comment__reply">
+                <a href="#">Ответить</a>
+              </div>
+            </div>
+            <div class="comments-list__item comment">
+              <div class="comment__avatar">
+                <img src="images/author-img.png" />
+              </div>
+              <div class="comment__meta-wrapper">
+                <div class="comment__meta">
+                  <div class="comment__name">
+                    Евгений
+                  </div>
+                  <i class="fa fa-calendar comment__date"><span>27 апреля 2015 г.</span></i>
+                </div>
+                <div class="comment__content">
+                  Спасибо, все работает!
+                </div>
+              </div>
+              <div class="comment__reply">
+                <a href="#">Ответить</a>
+              </div>
+            </div>
+            <div class="comments-list__item comment">
+              <div class="comment__avatar">
+                <img src="images/author-img.png" />
+              </div>
+              <div class="comment__meta-wrapper">
+                <div class="comment__meta">
+                  <div class="comment__name">
+                    Евгений
+                  </div>
+                  <i class="fa fa-calendar comment__date"><span>27 апреля 2015 г.</span></i>
+                </div>
+                <div class="comment__content">
+                  Спасибо, все работает!
+                </div>
+              </div>
+              <div class="comment__reply">
+                <a href="#">Ответить</a>
+              </div>
+            </div>
+            <div class="comments-list__item comment">
+              <div class="comment__avatar">
+                <img src="images/author-img.png" />
+              </div>
+              <div class="comment__meta-wrapper">
+                <div class="comment__meta">
+                  <div class="comment__name">
+                    Евгений
+                  </div>
+                  <i class="fa fa-calendar comment__date"><span>27 апреля 2015 г.</span></i>
+                </div>
+                <div class="comment__content">
+                  Спасибо, все работает!
+                </div>
+              </div>
+              <div class="comment__reply">
+                <a href="#">Ответить</a>
+              </div>
+            </div>
+            <div class="comments-list__item comment">
+              <div class="comment__avatar">
+                <img src="images/author-img.png" />
+              </div>
+              <div class="comment__meta-wrapper">
+                <div class="comment__meta">
+                  <div class="comment__name">
+                    Евгений
+                  </div>
+                  <i class="fa fa-calendar comment__date"><span>27 апреля 2015 г.</span></i>
+                </div>
+                <div class="comment__content">
+                  Спасибо, все работает!
+                </div>
+              </div>
+              <div class="comment__reply">
+                <a href="#">Ответить</a>
+              </div>
+            </div>
+            <div class="comments-list__item comment">
+              <div class="comment__avatar">
+                <img src="images/author-img.png" />
+              </div>
+              <div class="comment__meta-wrapper">
+                <div class="comment__meta">
+                  <div class="comment__name">
+                    Евгений
+                  </div>
+                  <i class="fa fa-calendar comment__date"><span>27 апреля 2015 г.</span></i>
+                </div>
+                <div class="comment__content">
+                  Спасибо, все работает!
+                </div>
+              </div>
+              <div class="comment__reply">
+                <a href="#">Ответить</a>
+              </div>
+            </div>
+            <div class="comments-list__item comment">
+              <div class="comment__avatar">
+                <img src="images/author-img.png" />
+              </div>
+              <div class="comment__meta-wrapper">
+                <div class="comment__meta">
+                  <div class="comment__name">
+                    Евгений
+                  </div>
+                  <i class="fa fa-calendar comment__date"><span>27 апреля 2015 г.</span></i>
+                </div>
+                <div class="comment__content">
+                  Спасибо, все работает!
+                </div>
+              </div>
+              <div class="comment__reply">
+                <a href="#">Ответить</a>
+              </div>
+            </div>
+          </div>
+          <div class="ajax-container ajax-comments">
+            <a class="ajax-more" href="#"><img src="images/refresh.png" /><span>Показать еще</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="content__sidebar">
+        <ul class="accordeon">
+          <li class="accordeon__item">
+            <h3>
+              Рубрики
+            </h3>
+            <div class="menu-toggle">
+              <i class="fa fa-bars"></i>
+            </div>
+          </li>
+          <ul class="sidebar-rubrics">
+            <li>
+              <a href="#">Рубрика 1</a>
+            </li>
+            <li>
+              <a href="#">Рубрика 2</a>
+            </li>
+            <li>
+              <a class="current" href="#">Рубрика 3</a>
+            </li>
+          </ul>
+        </ul>
+        <a class="banner" href="#"><img src="images/banner-right.jpg" /></a>
+        <div class="best-articles">
+          <h4 class="best-articles__heading">
+            Лучшие статьи
+          </h4>
+          <div class="best-articles-newsletter">
+            <input class="best-articles__input" placeholder="Email" type="email" /><button class="best-articles__submit" type="submit">Получить</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="container-fluid">
+      <div class="container">
+        <div class="footer-copyright">
+          <p></p>
+          © 2006-2015<br />Name.<br />Все права защищены.<br />Перепечатка запрещена.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.js" type="text/javascript"></script>
+<script src="js/jssocials.js"></script>
+<script src="js/main.js" type="text/javascript"></script>

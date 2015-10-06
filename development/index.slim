@@ -1,0 +1,199 @@
+doctype html
+html lang="en"
+  head
+    meta charset="utf-8" /
+    meta content="IE=edge" http-equiv="X-UA-Compatible" /
+    meta content="width=device-width, initial-scale=1" name="viewport" /
+    meta content="" name="description" /
+    meta content="" name="author" /
+    title Blog
+    link href="css/normalize.css" rel="stylesheet" /
+    link href="css/font-awesome.min.css" rel="stylesheet" /
+    link href="css/flaticon.css" rel="stylesheet" /
+    link href="css/styles.css" rel="stylesheet" /
+  body
+    header.header.container-fluid
+     .container
+        .header__logo
+          a.logo href="/" Лого
+        ul.menu
+          li.menu__item
+            a href="#" Меню
+          li.menu__item
+            a href="#" Меню
+          li.menu__item.menu__item--withsub
+            a href="#" Меню
+            ul.sub-menu
+              li.sub-menu__item
+                a href="#" Меню
+              li.sub-menu__item
+                a href="#" Меню
+              li.sub-menu__item
+                a href="#" Меню
+              li.sub-menu__item.menu__item--withsub
+                a href="#" Меню
+                ul.sub-menu2
+                  li.sub-menu__item
+                    a href="#" Меню
+                  li.sub-menu__item
+                    a href="#" Меню
+                  li.sub-menu__item
+                    a href="#" Меню
+        .mobile-menu-wrapper
+          #menu-toggle Меню
+          ul#menu
+            li
+              a href="#"  Меню
+            li
+              a href="#"  Меню
+            li
+              a href="#"  Меню
+              ul.sub-menu
+                li
+                  a href="#"  Меню
+                li
+                  a href="#"  Меню
+                li
+                  a href="#"  Меню
+                li
+                  a href="#"  Меню
+                  ul.sub-menu
+                    li
+                      a href="#"  Меню
+                    li
+                      a href="#"  Меню
+                    li
+                      a href="#"  Меню
+
+        .header__icons.social
+          a.social__item.social__item--search href="#"
+            img src="images/search.png"
+          a.social__item.social__item--twitter href="#"
+            img src="images/icon-twit.png"
+          a.social__item.social__item--google href="#"
+            img src="images/icon-google.png"
+          a.social__item.social__item--warning href="#"
+            img src="images/icon-warning.png"
+
+    .searchform
+      form#searchform[action=("/") method="get" name="search"]
+        input#s name="s" placeholder="Поиск..." type="text" /
+        .close-btn.i.fa.fa-times
+
+    .content.container
+      .content__main
+        .content__nav
+          .content-nav__type-of-content
+            ul.breadcrumbs
+              li.breadcrumbs__item.breadcrumbs__item--home
+                a href="#"
+                  i.fa.fa-home
+              li.breadcrumbs__item.breadcrumbs__item--rubrics
+                a href="#" Рубрика
+              li.breadcrumbs__item.breadcrumbs__item--note
+                a href="#" Запись
+          .content-nav__popular-content
+            ul.nav-popular
+              li.nav-popular__item.active
+                a href="#" Новые
+              li.nav-popular__item
+                a href="#" Популярные
+        .content-wrapper
+          .content-post
+            h2.content-post__heading
+              a href="#" Создание слайдера из стандартной фотогалереи WordPress
+
+            .content-post__in
+              .content-post__image
+                img src="images/post-image1.png"
+              .content-post-info
+                .content-post-info__text
+                  p Как вы наверняка знаете, WordPress имеет встроенный функционал добавления в статьи сайта простеньких фотогалерей. Когда вы добавляете в статью галерею из фотографий через кнопку «Добавить медиафайл», в текст вставляется шоткод вида . Так вот, с помощью специально предусмотренного для подобных случаев фильтра post_gallery ...
+                .content-post-info__meta.meta
+                  i.fa.fa-calendar.meta__date
+                    p 27 апреля 2015 года.
+                  i.fa.fa-pencil-square-o.meta__rubric
+                    p рубрика
+                  i.fa.fa-comment-o.meta-comments
+                    p 5 комментариев
+                  i.fa.fa-eye.meta-reviews
+                    p 100 просмотров
+          .content-post
+            h2.content-post__heading
+              a href="#" Конструктор URL для CDN jsDelivr.com
+            .content-post__in
+              .content-post__image
+                img src="images/post-image2.png"
+              .content-post-info
+                .content-post-info__text
+                  p jsDelivr — это быстрая бесплатная CDN, созданная украинским разработчиком, которая может хранить у себя файлы разных типов, используемых на сайтах, такие, как: JavaScript-файлы, CSS-файлы, картинки, шрифты. Здесь можно найти большое количество популярных плагинов, библиотек, фреймворков и т.п. Я начал пользоваться данной CDN после ...
+                .content-post-info__meta.meta
+                  i.fa.fa-calendar.meta__date
+                    p 27 апреля 2015 года.
+                  i.fa.fa-pencil-square-o.meta__rubric
+                    p рубрика
+                  i.fa.fa-comment-o.meta-comments
+                    p 5 комментариев
+                  i.fa.fa-eye.meta-reviews
+                    p 100 просмотров
+          .content-post
+            h2.content-post__heading
+              a href="#" Стилизация чекбоксов и радиокнопок на чистом CSS с совместимостью для старых браузеров
+            .content-post__in
+              .content-post__image
+                img src="images/post-image3.png"
+              .content-post-info
+                .content-post-info__text
+                  p Честно говоря, я «слегка» припозднился с данной статьей, т.к. то, что в ней изложено, можно было применять на практике уже довольно давно. Но лучше поздно, чем никогда, тем более, что я уверен, что среди моих читателей найдутся и те, кто не пользуется этим ...
+                .content-post-info__meta.meta
+                  i.fa.fa-calendar.meta__date
+                    p 27 апреля 2015 года.
+                  i.fa.fa-pencil-square-o.meta__rubric
+                    p рубрика
+                  i.fa.fa-comment-o.meta-comments
+                    p 5 комментариев
+                  i.fa.fa-eye.meta-reviews
+                    p 100 просмотров
+          .ajax-container
+              a.ajax-more href="#"
+                img src="images/refresh.png"
+                span Еще записи
+      .content__sidebar
+        ul.accordeon
+          li.accordeon__item
+            h3
+              | Рубрики
+            .menu-toggle
+              i.fa.fa-bars
+          ul.sidebar-rubrics
+            li
+             a href="#" Рубрика 1
+            li
+             a href="#" Рубрика 2
+            li
+             a.current href="#" Рубрика 3
+        a.banner href="#"
+          img src="images/banner-right.jpg"
+        .best-articles
+          h4.best-articles__heading Лучшие статьи
+          .best-articles-newsletter
+            input.best-articles__input[type="email" placeholder="Email"]
+            button.best-articles__submit[type="submit"] Получить
+
+
+    footer.container-fluid
+      .container
+        .footer-copyright
+          p
+          | © 2006-2015
+          br/
+          | Name.
+          br/
+          | Все права защищены.
+          br/
+          | Перепечатка запрещена.
+script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.js" type="text/javascript"
+script src="js/main.js" type="text/javascript"
+
+
+
